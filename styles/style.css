@@ -135,6 +135,10 @@ h1 {
     font-size: 5.6rem;
 }
 
+h2 {
+    font-size: 4.8rem;
+}
+
 h3 {
     font-size: 4.2rem;
 }
@@ -167,6 +171,12 @@ h3 {
     gap: 7rem;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .skills__list,
 .languages {
     font-size: 1.4rem;
@@ -180,7 +190,7 @@ h3 {
 }
 
 .skills__list {
-    height: 15rem;
+    height: 10rem;
     flex-wrap: wrap;
 }
 
@@ -220,7 +230,6 @@ h3 {
 #codeexample {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -244,6 +253,37 @@ h3 {
     top: -0.5rem;
     border-top-right-radius: 2.5rem;
     box-shadow: -5px 8px 8px 1px rgba(34, 60, 80, 0.2);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projects table {
+    border: 1px solid #161616;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.projects table th, .projects table td {
+    border: 1px solid #161616;
+    text-align: center;
+}
+
+.table__descr {
+    width: 20rem;
+}
+
+.projects table td a {
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+.projects table td a:hover {
+    text-decoration: underline;
 }
 
 .footer__list {

@@ -44,7 +44,7 @@
                 </div>
                 <div class="intro">
                     <h1>Grigorovich Polina</h1>
-                    <h3>Frontend Developer</h3>
+                    <h2>Frontend Developer</h2>
                     <ul class="contacts">
                         <li>
                             <a href="https://github.com/linawashere">
@@ -131,6 +131,34 @@
                             </p>
                         </div>
                     </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span> TSUAB Student</span>
+                            <span>2019 - 2025</span>
+                        </div>
+                        <div id="codeexample">
+                            <h3>Code example: Restored toString() method</h3>
+                            <code class="codeexample__item">
+                    <pre>
+Number.prototype.toString = function() {
+    return this + '';
+}
+
+Boolean.prototype.toString = function() {
+    return this.valueOf() ? 'true' : 'false';
+}
+
+Array.prototype.toString = function() {
+    let arr = [];
+    for (let i = 0; i < this.length; i++) {
+        arr.push(this[i].toString());
+    }
+    return "[" + arr.join(',') + "]";
+}
+                    </pre>
+                </code>
+                        </div>
+                    </div>
                 </section>
                 <section id="skills">
                     <div class="skills">
@@ -165,33 +193,61 @@
                             <span>A1</span>
                         </div>
                     </div>
-                    
+                    <div class="projects">
+                        <h3>My projects</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Demo</th>
+                                    <th>Date</th>
+                                    <th class="table__descr">What I Learned</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Task on Vue</td>
+                                    <td><a href="https://linawashere.github.io/test-task-on-vue/">Link</a></td>
+                                    <td>Jul 2025</td>
+                                    <td>
+                                        First experience with Vue.js 3 and Composition API. Implemented a responsive
+                                        cross-browser landing page with the BEM semantic methodology. Tools: sliders,
+                                        modals
+                                        (Fancybox) and form validation (Yup). Created reusable components, managed
+                                        global/local
+                                        CSS variables, implemented smooth animations. Improved skills in following
+                                        technical
+                                        specifications
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fashion sneaker store</td>
+                                    <td><a href="https://deploy-preview-81--di-or-die-market.netlify.app/">Link</a></td>
+                                    <td>Apr 2025 - Jun 2025</td>
+                                    <td>Practicing skills in creating a modern web application using TypeScript,
+                                        learning how to
+                                        work with API (CommerceTools) and technologies for building SPA. Gaining
+                                        experience in
+                                        teamwork, including distribution of tasks, using Agile methodologies</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/linawashere/vanilla-project/tree/dev">Vanilla project</a></td>
+                                    <td>—</td>
+                                    <td>Feb 2025 — May 2025 </td> 
+                                    <td>Creating UI components using pug, gulp, sass, js technologies</td>
+                                </tr>
+                                <tr>
+                                    <td>My first project</td>
+                                    <td><a href="https://linawashere.github.io/my-very-first-project/">Link</a></td>
+                                    <td>May 2016</td>
+                                    <td>Introduction to markup language</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             </div>
-            <div id="codeexample">
-                <h3>Code example: Restored toString() method</h3>
-                <code class="codeexample__item">
-                    <pre>
-Number.prototype.toString = function() {
-    return this + '';
-}
-
-Boolean.prototype.toString = function() {
-    return this.valueOf() ? 'true' : 'false';
-}
-
-Array.prototype.toString = function() {
-    let arr = [];
-    for (let i = 0; i < this.length; i++) {
-        arr.push(this[i].toString());
-    }
-    return "[" + arr.join(',') + "]";
-}
-                    </pre>
-                </code>
-            </div>
         </main>
-
     </div>
     <footer class="footer">
         <ul class="footer__list">
