@@ -17,9 +17,26 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="https://github.com/linawashere"><img src="./images/photo_2025-07-10_13-41-10.jpg" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="header__nav">
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#codeexample">Code example</a>
+                </li>
+                <li>
+                    <a href="#expirience">Expirience</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header></header>
-        <aside></aside>
         <main>
             <div class="profile">
                 <div class="main-photo">
@@ -27,7 +44,7 @@
                 </div>
                 <div class="intro">
                     <h1>Grigorovich Polina</h1>
-                    <h3>Frontend Developer</h3>
+                    <h2>Frontend Developer</h2>
                     <ul class="contacts">
                         <li>
                             <a href="https://github.com/linawashere">
@@ -52,9 +69,195 @@
                     </ul>
                 </div>
             </div>
+            <section class="story">
+                <p>
+                    Hi! My name is Polina Grigorovich. My story as a frontend developer begins in 2016 during computer
+                    science classes, when I created my first project and fell in love with this activity. I always
+                    enjoyed feeling like an "expert" in this field (yes, that's a strong word, haha), I always loved
+                    studying this field. Nothing compares to "wow, your project is so cool", with high scores on
+                    courses, with requests for advice from friends. I want to become a real professional in my field!
+                </p>
+            </section>
+            <div class="about">
+                <section id="expirience">
+                    <h3>Expirience</h3>
+                    <div>
+                        <div class="expirience__item-title">
+                            <span>Frontend Developer Trainee</span>
+                            <span>Feb 2025 - May 2025</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                Development of UI components for promo sites and portals using technologies: Pug, Gulp,
+                                Sass, JS, Git, npm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span>Student, JS / Front-end RU Course, RS School</span>
+                            <span>Sep 2024 - Jun 2025</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                Git, HTML, CSS, Javascript Basics, Advanced Javascript, Security, Testing, Agile,
+                                Networking, Web development tools, collective development of the final project
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span>Student, course "Web programming", TSUAB</span>
+                            <span>Sep 2023 - Jun 2024</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                The training included the following sections: structure and principles of the WWW. Web
+                                editors, HTML, CSS, basics of algorithms and programming, programming in JavaScript, PHP
+                                and databases, dynamic web technologies, internship and final certification
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span>Frontend developer</span>
+                            <span>May 2023- Feb 2024</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                Development of websites for teachers in an educational organization. Development
+                                according to your own layout, project launch, consultation on technical aspects, website
+                                support
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span> TSUAB Student</span>
+                            <span>2019 - 2025</span>
+                        </div>
+                        <div id="codeexample">
+                            <h3>Code example: Restored toString() method</h3>
+                            <code class="codeexample__item">
+                    <pre>
+Number.prototype.toString = function() {
+    return this + '';
+}
+
+Boolean.prototype.toString = function() {
+    return this.valueOf() ? 'true' : 'false';
+}
+
+Array.prototype.toString = function() {
+    let arr = [];
+    for (let i = 0; i < this.length; i++) {
+        arr.push(this[i].toString());
+    }
+    return "[" + arr.join(',') + "]";
+}
+                    </pre>
+                </code>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul class="skills__list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JS</li>
+                            <li>TypeScript</li>
+                            <li>Webpack, Gulp, Vite</li>
+                            <li>React</li>
+                            <li>Git/GitHub</li>
+                            <li>Code Review</li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h3>Languages</h3>
+                        <div class="languages__item">
+                            <span>English</span>
+                            <span>A2</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>German</span>
+                            <span>A1</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>French</span>
+                            <span>A1</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>Japan</span>
+                            <span>A1</span>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <h3>My projects</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Demo</th>
+                                    <th>Date</th>
+                                    <th class="table__descr">What I Learned</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Task on Vue</td>
+                                    <td><a href="https://linawashere.github.io/test-task-on-vue/">Link</a></td>
+                                    <td>Jul 2025</td>
+                                    <td>
+                                        First experience with Vue.js 3 and Composition API. Implemented a responsive
+                                        cross-browser landing page with the BEM semantic methodology. Tools: sliders,
+                                        modals
+                                        (Fancybox) and form validation (Yup). Created reusable components, managed
+                                        global/local
+                                        CSS variables, implemented smooth animations. Improved skills in following
+                                        technical
+                                        specifications
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fashion sneaker store</td>
+                                    <td><a href="https://deploy-preview-81--di-or-die-market.netlify.app/">Link</a></td>
+                                    <td>Apr 2025 - Jun 2025</td>
+                                    <td>Practicing skills in creating a modern web application using TypeScript,
+                                        learning how to
+                                        work with API (CommerceTools) and technologies for building SPA. Gaining
+                                        experience in
+                                        teamwork, including distribution of tasks, using Agile methodologies</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/linawashere/vanilla-project/tree/dev">Vanilla project</a></td>
+                                    <td>—</td>
+                                    <td>Feb 2025 — May 2025 </td> 
+                                    <td>Creating UI components using pug, gulp, sass, js technologies</td>
+                                </tr>
+                                <tr>
+                                    <td>My first project</td>
+                                    <td><a href="https://linawashere.github.io/my-very-first-project/">Link</a></td>
+                                    <td>May 2016</td>
+                                    <td>Introduction to markup language</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
         </main>
-        <footer></footer>
     </div>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li><a href="https://github.com/linawashere">GitHub</a></li>
+            <li>2025</li>
+            <a href="https://rs.school/courses/javascript-ru">
+                <img class="footer__list-img" src="./images/rs-school-logo.svg" alt="rs school img">
+            </a>
+        </ul>
+    </footer>
 </body>
 
 </html>
