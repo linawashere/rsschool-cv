@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    font-family: var(--intro-font);
+}
+
 body {
     background: var(--bg);
     background-image: url(../images/paper.png);
@@ -7,9 +12,48 @@ body {
     margin: 0 auto;
     max-width: 120rem;
     background: var(--bg-substrate);
-    height: 100vh;
     background-image: url(../images/paper.png);
     padding: 8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.header,
+.footer {
+    max-width: 120rem;
+    margin: 0 auto;
+    font-size: 3.2rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 3rem;
+}
+
+.header__nav li {
+    font-family: var(--text);
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+}
+
+.header__nav li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.header__nav li a:hover {
+    transform: scale(1.1);
+    color: var(--bg-substrate);
 }
 
 .main-photo img {
@@ -48,7 +92,7 @@ body {
     width: 55rem;
 }
 
-.intro h1{
+.intro h1 {
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
@@ -80,7 +124,82 @@ h3 {
     padding: 2rem 0;
 }
 
+.contacts li a {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.contacts li a:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.skills__list,
+.languages {
+    font-size: 1.4rem;
+}
+
+.skills__list,
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.languages__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#expirience,
+#skills {
+    flex: 1;
+}
+
+#expirience {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.expirience__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.expirience__item-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.expirience__item-descr {
+    font-size: 1.2rem;
+}
+
+.footer__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list-img {
+    width: 10rem;
+}
+
+/* media queries */
+
 @media screen and (max-width: 767px) {
+    .header {
+        min-width: 100%;
+    }
+
     .container {
         max-width: 100%;
         padding: 0 1rem;
@@ -92,13 +211,17 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-    .container {
+
+    .container,
+    .header {
         max-width: 70rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
+
+    .container,
+    .header {
         max-width: 120rem;
     }
 }
