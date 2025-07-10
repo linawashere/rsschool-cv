@@ -88,6 +88,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    user-select:text;
 }
 
 .intro {
@@ -163,12 +164,14 @@ h3 {
 .story {
     font-size: 1.6rem;
     hyphens: auto;
+    user-select:text;
 }
 
 .about {
     display: flex;
     justify-content: space-between;
     gap: 7rem;
+    user-select:text;
 }
 
 .skills {
@@ -268,7 +271,8 @@ h3 {
     width: 100%;
 }
 
-.projects table th, .projects table td {
+.projects table th,
+.projects table td {
     border: 1px solid #161616;
     text-align: center;
 }
@@ -299,7 +303,8 @@ h3 {
 /* media queries */
 
 @media screen and (max-width: 767px) {
-    .header {
+    .header,
+    .footer {
         min-width: 100%;
     }
 
@@ -311,13 +316,163 @@ h3 {
     .intro {
         width: auto;
     }
+
+    .main-photo img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .header,
+    .footer {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        height: 5rem;
+    }
+
+    .header__logo img {
+        width: 10rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+
+    .header__nav {
+        gap: 1rem;
+    }
+
+    main {
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .contacts {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .profile {
+        gap: 2rem;
+    }
+    
+    .expirience__item-title,
+    .codeexample__item,
+    .skills__list,
+    .languages__item,
+    .projects table,
+    .story {
+        font-size: 1rem;
+    }
+
+    .expirience__item-descr {
+        font-size: 0.8rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .table__descr {
+        width: auto;
+    }
+
+    .footer__list-img {
+        width: 5rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
 
     .container,
-    .header {
+    .header,
+    .footer {
         max-width: 70rem;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+
+    .intro {
+        width: auto;
+    }
+
+    .main-photo img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .header,
+    .footer {
+        font-size: 1.8rem;
+        height: 7rem;
+    }
+
+    .header__logo img {
+        width: 18rem;
+        height: 4rem;
+        object-fit: cover;
+    }
+
+    .header__nav {
+        gap: 2.4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    .contacts {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+    }
+
+    .profile {
+        gap: 2rem;
+    }
+
+    .expirience__item-title,
+    .codeexample__item,
+    .skills__list,
+    .languages__item,
+    .projects table,
+    .story {
+        font-size: 2rem;
+    }
+
+    .expirience__item-descr {
+        font-size: 1.4rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .table__descr {
+        width: auto;
+    }
+
+    .footer__list-img {
+        width: 5rem;
     }
 }
 
