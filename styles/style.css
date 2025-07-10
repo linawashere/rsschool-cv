@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     font-family: var(--intro-font);
+    user-select: none;
 }
 
 body {
@@ -33,6 +34,12 @@ main {
     align-items: center;
 }
 
+.header__logo img {
+    width: 20rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
 .header__nav {
     display: flex;
     gap: 3rem;
@@ -41,7 +48,6 @@ main {
 .header__nav li {
     font-family: var(--text);
     cursor: pointer;
-    user-select: none;
     display: inline-block;
 }
 
@@ -95,16 +101,33 @@ main {
 .intro h1 {
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    border-right: 3px solid;
+    width: 0;
+    animation:
+        typing 3s steps(30, end) forwards,
+        blink-caret 0.75s step-end infinite;
+    animation-delay: 0s, 3s;
 }
 
 @keyframes typing {
     from {
-        width: 0;
+        width: 0
     }
 
     to {
-        width: 100%;
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--text)
     }
 }
 
@@ -133,10 +156,15 @@ h3 {
     transform: scale(1.1);
 }
 
+.story {
+    font-size: 1.6rem;
+    hyphens: auto;
+}
+
 .about {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 7rem;
 }
 
 .skills__list,
@@ -149,6 +177,11 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.skills__list {
+    height: 15rem;
+    flex-wrap: wrap;
 }
 
 .languages__item {
@@ -175,12 +208,42 @@ h3 {
 
 .expirience__item-title {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     font-size: 1.8rem;
 }
 
 .expirience__item-descr {
     font-size: 1.2rem;
+}
+
+#codeexample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.codeexample__item {
+    font-size: 1.6rem;
+    padding: 1.5rem 4rem;
+    background: #fff;
+    border-top-right-radius: 3.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.codeexample__item::before {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #e6e5e0;
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    border-top-right-radius: 2.5rem;
+    box-shadow: -5px 8px 8px 1px rgba(34, 60, 80, 0.2);
 }
 
 .footer__list {
