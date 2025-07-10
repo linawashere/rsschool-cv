@@ -17,9 +17,23 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__logo"></div>
+        <nav>
+            <ul class="header__nav">
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#codeexample">Code example</a>
+                </li>
+                <li>
+                    <a href="#expirience">Expirience</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header></header>
-        <aside></aside>
         <main>
             <div class="profile">
                 <div class="main-photo">
@@ -52,9 +66,81 @@
                     </ul>
                 </div>
             </div>
+            <div class="about">
+                <section id="expirience">
+                    <h3>Expirience</h3>
+                    <div>
+                        <div class="expirience__item-title">
+                            <span>Frontend Developer Trainee</span>
+                            <span>Feb 2025 - May 2025</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                Development of UI components for promo sites and portals using technologies: Pug, Gulp,
+                                Sass, JS, Git, npm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expirience__item">
+                        <div class="expirience__item-title">
+                            <span>Frontend developer</span>
+                            <span>2023-2024</span>
+                        </div>
+                        <div class="expirience__item-descr">
+                            <p>
+                                Development of websites for teachers in an educational organization. Development
+                                according to your own layout, project launch, consultation on technical aspects, website
+                                support
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul class="skills__list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JS</li>
+                            <li>TypeScript</li>
+                            <li>Webpack, Gulp, Vite</li>
+                            <li>React</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h3>Languages</h3>
+                        <div class="languages__item">
+                            <span>English</span>
+                            <span>A2</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>German</span>
+                            <span>A1</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>French</span>
+                            <span>A1</span>
+                        </div>
+                        <div class="languages__item">
+                            <span>Japan</span>
+                            <span>A1</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-        <footer></footer>
+        
     </div>
+    <footer class="footer">
+            <ul class="footer__list">
+                <li><a href="https://github.com/linawashere">GitHub</a></li>
+                <li>2025</li>
+                <a href="https://rs.school/courses/javascript-ru">
+                    <img class="footer__list-img" src="./images/rs-school-logo.svg" alt="rs school img">
+                </a>
+            </ul>
+        </footer>
 </body>
 
 </html>
