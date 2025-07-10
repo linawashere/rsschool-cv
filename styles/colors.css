@@ -1,0 +1,9 @@
+html {
+    /* bg */
+    --bg: #fff;
+    --bg-substrate: #E5C30D;
+
+
+    /* text */
+    --text: #101010;
+}
