@@ -70,6 +70,7 @@
                 </div>
             </div>
             <section class="story">
+                <h3>My Story</h3>
                 <p>
                     Hi! My name is Polina Grigorovich. My story as a frontend developer begins in 2016 during computer
                     science classes, when I created my first project and fell in love with this activity. I always
@@ -138,8 +139,7 @@
                         </div>
                         <div id="codeexample">
                             <h3>Code example: Restored toString() method</h3>
-                            <code class="codeexample__item">
-                    <pre>
+                            <pre class="codeexample__item">
 Number.prototype.toString = function() {
     return this + '';
 }
@@ -150,13 +150,12 @@ Boolean.prototype.toString = function() {
 
 Array.prototype.toString = function() {
     let arr = [];
-    for (let i = 0; i < this.length; i++) {
+    for (let i = 0; i &lt; this.length; i++) {
         arr.push(this[i].toString());
     }
     return "[" + arr.join(',') + "]";
 }
                     </pre>
-                </code>
                         </div>
                     </div>
                 </section>
@@ -231,9 +230,10 @@ Array.prototype.toString = function() {
                                         teamwork, including distribution of tasks, using Agile methodologies</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="https://github.com/linawashere/vanilla-project/tree/dev">Vanilla project</a></td>
+                                    <td><a href="https://github.com/linawashere/vanilla-project/tree/dev">Vanilla
+                                            project</a></td>
                                     <td>—</td>
-                                    <td>Feb 2025 — May 2025 </td> 
+                                    <td>Feb 2025 — May 2025 </td>
                                     <td>Creating UI components using pug, gulp, sass, js technologies</td>
                                 </tr>
                                 <tr>
@@ -253,9 +253,11 @@ Array.prototype.toString = function() {
         <ul class="footer__list">
             <li><a href="https://github.com/linawashere">GitHub</a></li>
             <li>2025</li>
-            <a href="https://rs.school/courses/javascript-ru">
-                <img class="footer__list-img" src="./images/rs-school-logo.svg" alt="rs school img">
-            </a>
+            <li>
+                <a href="https://rs.school/courses/javascript-ru">
+                    <img class="footer__list-img" src="./images/rs-school-logo.svg" alt="rs school img">
+                </a>
+            </li>
         </ul>
     </footer>
 </body>
